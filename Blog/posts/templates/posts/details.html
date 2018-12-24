@@ -1,0 +1,14 @@
+{% extends 'posts/layout.html'%}
+{% block content %}
+<h3 class="center-align red lighten-3" >{{post.title}}</h3>
+<h4 class="center-align">{{post.author}}</h4>
+<div class="card">
+    {{post.body}}
+</div>
+<br>
+<div class="card-action">
+    {{post.created_at}}
+</div>
+<br>
+<a href="/posts" class="btn">Go Back</a>
+{% endblock %}
